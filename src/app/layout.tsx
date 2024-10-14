@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import SideNav from "@/app/ui/sidenav";
+import Navbar from "@/app/ui/Navbar";
 
 export const metadata: Metadata = {
     title: "Portfolio",
@@ -11,15 +11,11 @@ export default function RootLayout({children}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-        <body
-            className={`antialiased`}
-        >
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-            <div className="w-full flex-none md:w-64">
-                <SideNav/>
-            </div>
-            <div className="grow bg-custom-bg">{children}</div>
+        <html lang="fr">
+        <body>
+        <div className="flex h-screen flex-col">
+            <Navbar />
+            <div className='bg-dark flex-1'>{children}</div>
         </div>
         </body>
         </html>
