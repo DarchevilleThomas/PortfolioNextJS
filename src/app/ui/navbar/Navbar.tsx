@@ -1,28 +1,28 @@
 'use client';
 
 import { useState } from "react";
-import Link from "@/app/ui/Link";
+import Link from "@/app/ui/navbar/Link";
 import { Link as LinkType } from "@/app/types/global";
-import ThomasLogo from "@/app/ui/ThomasLogo";
+import ThomasLogo from "@/app/ui/navbar/ThomasLogo";
 
 const Navbar = () => {
 
     const [open, setOpen] = useState(false);
 
     const links: LinkType[] = [
-        { name: 'Presentation', path: '/' },
-        { name: 'Experiences', path: '/experiences' },
+        { name: 'Presentation', path: '#test' },
+        { name: 'Experiences', path: '#test2' },
         { name: 'Projets', path: '/projets' },
         { name: 'Me contacter', path: '/contact' }
     ];
 
     return (
-        <div className="relative flex flex-row bg-primary-dark h-16 shadow shadow-primary-light justify-between items-center gap-5 px-5">
+        <div className="fixed top-0 left-0 w-full flex flex-row bg-dark h-16 min-h-16 justify-between items-center gap-5 px-5 border-b border-black/20">
 
-            <ThomasLogo />
+            <ThomasLogo/>
 
             {/* Liens de navigation visibles uniquement sur les écrans moyens et plus grands */}
-            <div className='hidden md:flex gap-5'>
+            <div className='hidden md:flex gap-8'>
                 {links.map((link) =>
                     <Link key={link.name} link={link} />
                 )}
@@ -38,7 +38,7 @@ const Navbar = () => {
 
             {/* Menu mobile pour petits écrans avec animation */}
             <div
-                className={`absolute top-0 right-0 w-screen h-screen bg-primary-dark flex flex-col gap-8 justify-center items-center transform transition-transform duration-500 ease-in-out
+                className={`fixed top-0 right-0 w-screen h-screen bg-dark-light/30 flex flex-col gap-8 justify-center items-center transform transition-transform duration-500 ease-in-out backdrop-blur
                 ${open ? 'translate-y-0' : '-translate-y-full'}`}
             >
                 <img
@@ -49,7 +49,7 @@ const Navbar = () => {
                 />
 
                 {links.map((link) =>
-                    <Link key={link.name} link={link} />
+                    <Link key={link.name} link={link} onClick={() => setOpen(!open)} />
                 )}
             </div>
         </div>

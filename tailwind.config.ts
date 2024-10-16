@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'dark': '#02000A',
-        'primary-dark': '#2E165B',
-        'primary': '#7E4EAC',
-        'primary-light': '#AF77D5'
+        'dark': '#1F242D',
+        'dark-light': '#323946',
+        'primary': '#56C8EA',
       },
+      fontFamily: {
+        'sans': ['Poppins'],
+      }
     },
   },
   plugins: [],

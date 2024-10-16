@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Poppins-Regular.ttf') format("truetype");
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  scroll-behavior: smooth;
   color: white;
 }
