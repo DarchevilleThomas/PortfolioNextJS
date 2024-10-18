@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const links: LinkType[] = [
         { name: "Presentation", path: "#presentation" },
-        { name: "Experiences", path: "#experiences" },
+        { name: "Compétences", path: "#competences" },
         { name: "Projets", path: "#projets" },
         { name: "Me contacter", path: "#contact" }
     ];
@@ -23,7 +23,7 @@ const Navbar = () => {
             <ThomasLogo />
 
             {/* Liens de navigation visibles uniquement sur les écrans moyens et plus grands */}
-            <div className="hidden md:flex gap-12">
+            <div className="hidden lg:flex gap-12">
                 {links.map((link) =>
                     <Link key={link.name} link={link} />
                 )}
@@ -34,7 +34,7 @@ const Navbar = () => {
                 onClick={() => setOpen(!open)}
                 src="/icons/hamburger-menu.svg"
                 alt="hamburger-menu-icon"
-                className="md:hidden absolute top-6 right-12 hover:cursor-pointer"
+                className="lg:hidden absolute top-6 right-12 hover:cursor-pointer"
             />
 
             {/* Menu mobile pour petits écrans avec animation */}

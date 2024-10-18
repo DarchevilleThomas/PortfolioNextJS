@@ -9,7 +9,7 @@ const Link = ({link, onClick}: Props) => {
 
     return (
         <a href={link.path} onClick={onClick}
-           className='hover:text-primary transition duration-300'>
+           className='hover:text-primary transition duration-300 text-xl'>
             {link.name}
         </a>
     )
