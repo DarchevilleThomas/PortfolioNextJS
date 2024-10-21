@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Link from "@/app/ui/navbar/Link";
+import Link from "@/app/ui/layout/navbar/Link";
 import { Link as LinkType } from "@/app/types/global";
-import ThomasLogo from "@/app/ui/navbar/ThomasLogo";
+import ThomasLogo from "@/app/ui/layout/navbar/ThomasLogo";
 
 const Navbar = () => {
 

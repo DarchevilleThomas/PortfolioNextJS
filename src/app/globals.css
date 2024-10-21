@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-dark: #1F242D;
+    --color-dark-light: #323946;
+    --color-primary: #56C8EA;
+  }
+
   @font-face {
     font-family: 'Poppins';
     font-style: normal;
@@ -10,6 +16,22 @@
     font-display: swap;
     src: url('/fonts/Poppins-Regular.ttf') format("truetype");
   }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    background-color: var(--color-dark) !important;
+    color: white !important;
+    -webkit-box-shadow: 0 0 0 30px var(--color-dark) inset !important;
+    -webkit-text-fill-color: white !important;
+    border: 1px solid var(--color-primary) !important;
+  }
+
 }
 
 * {

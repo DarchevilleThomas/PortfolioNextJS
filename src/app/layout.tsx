@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import "./globals.css";
-import Navbar from "@/app/ui/navbar/Navbar";
+import Navbar from "@/app/ui/layout/navbar/Navbar";
 
 export const metadata: Metadata = {
     title: "Portfolio",

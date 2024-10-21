@@ -11,7 +11,7 @@ const Presentation = () => {
                     <h3 className="text-2xl md:text-3xl font-bold">Bonjour, je m'appelle</h3>
                     <h1 className="text-4xl md:text-5xl font-bold text-primary mt-2">Thomas Darcheville</h1>
                     <h3 className="text-2xl md:text-3xl font-bold mt-4">
-                        Je suis étudiant dans le domaine de l'<span className="text-primary">informatique</span>
+                        Je suis <span className="text-primary">développeur web.</span>
                     </h3>
                     <p className="text-base md:text-lg mt-4 leading-relaxed">
                         Actuellement en 3ème année de BUT informatique à l'IUT de Lens en alternance chez Primever.
