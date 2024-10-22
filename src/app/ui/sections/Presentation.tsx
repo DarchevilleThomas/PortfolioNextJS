@@ -1,7 +1,7 @@
 const Presentation = () => {
 
     return (
-        <div id="presentation" className="h-screen flex flex-col">
+        <div id="presentation" className="min-h-screen flex flex-col">
             {/* Permet de combler l'emplacement de la navbar */}
             <div className="h-16 py-12" />
 

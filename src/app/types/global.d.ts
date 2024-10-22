@@ -3,6 +3,12 @@ type Link = {
     path: string
 }
 
+type CardInfo = {
+    icon: string,
+    title: string,
+}
+
 export {
-    Link
+    Link,
+    CardInfo
 }

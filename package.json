@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.1.5",
+    "@iconify/react": "^5.0.2",
     "clsx": "^2.1.1",
+    "embla-carousel-auto-scroll": "^8.3.0",
+    "embla-carousel-autoplay": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18"

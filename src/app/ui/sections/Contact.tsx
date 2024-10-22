@@ -3,7 +3,7 @@
 const Contact = () => {
 
     return (
-        <div id="contact" className="h-screen w-full bg-dark-light flex flex-col items-center pt-28">
+        <div id="contact" className="min-h-screen w-full bg-dark-light flex flex-col items-center pt-28">
             <p className="text-3xl md:text-4xl font-bold">Me <span className="text-primary">contacter</span></p>
 
             <div className="w-full flex-1 flex justify-center items-center">
