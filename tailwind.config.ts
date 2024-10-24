@@ -15,7 +15,11 @@ const config: Config = {
       },
       fontFamily: {
         'sans': ['Poppins'],
-      }
+      },
+      flexGrow: {
+        '1': '1',
+        '2': '2',
+      },
     },
   },
   plugins: [],

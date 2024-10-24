@@ -6,19 +6,19 @@ const Presentation = () => {
             <div className="h-16 py-12" />
 
             <section
-                className="flex-grow w-full h-full flex flex-col md:flex-row justify-center items-center gap-6 md:gap-10 p-4 md:p-6">
-                <div className="text-center md:text-left">
-                    <h3 className="text-2xl md:text-3xl font-bold">Bonjour, je m'appelle</h3>
-                    <h1 className="text-4xl md:text-5xl font-bold text-primary mt-2">Thomas Darcheville</h1>
-                    <h3 className="text-2xl md:text-3xl font-bold mt-4">
+                className="flex-grow w-full h-full flex flex-col lg:flex-row justify-center items-center gap-6 md:gap-10 p-4 md:p-6">
+                <div className="text-center lg:text-left">
+                    <h3 className="text-3xl lg:text-6xl font-bold">Bonjour, je m'appelle</h3>
+                    <h1 className="text-5xl lg:text-8xl font-bold text-primary mt-2">Thomas Darcheville</h1>
+                    <h3 className="text-3xl lg:text-6xl font-bold mt-4">
                         Je suis <span className="text-primary">développeur web.</span>
                     </h3>
-                    <p className="text-base md:text-lg mt-4 leading-relaxed">
+                    <p className="text-lg lg:text-2xl mt-4 leading-relaxed">
                         Actuellement en 3ème année de BUT informatique à l'IUT de Lens en alternance chez Primever.
                     </p>
 
                     {/* Réseaux sociaux */}
-                    <div className="social-media flex justify-center md:justify-start mt-6 space-x-4">
+                    <div className="social-media flex justify-center lg:justify-start mt-6 space-x-4">
                         <a href="https://linkedin.com/in/thomas-darcheville" target="_blank"
                            className="w-10 h-10 md:w-12 md:h-12 flex justify-center items-center border-2 border-primary rounded-full text-primary hover:bg-primary hover:text-white transition">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -49,7 +49,7 @@ const Presentation = () => {
 
                     {/* Bouton de téléchargement du CV */}
                     <a href="/resources/CV-Darcheville-Thomas.pdf"
-                       className="inline-block mt-6 px-6 py-3 bg-primary text-white font-semibold rounded-full shadow-[0_0_1rem] shadow-primary hover:shadow-none transition"
+                       className="inline-block mt-6 px-8 py-4 bg-primary text-white lg:text-xl font-semibold rounded-full shadow-[0_0_1rem] shadow-primary hover:shadow-none transition lg:tracking-widest"
                        download="">
                         Télécharger mon CV
                     </a>
@@ -58,7 +58,7 @@ const Presentation = () => {
                 {/* Photo de profil */}
                 <div>
                     <img src="/images/photo.png" alt="Photo Accueil"
-                         className="w-40 md:w-52 lg:w-64 rounded-full object-cover" />
+                         className="w-40 md:w-60 lg:w-80 rounded-full object-cover" />
                 </div>
             </section>
         </div>

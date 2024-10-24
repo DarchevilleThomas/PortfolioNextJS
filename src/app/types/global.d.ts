@@ -8,7 +8,15 @@ type CardInfo = {
     title: string,
 }
 
+type CardType =  {
+    imageLink: string,
+    title: string,
+    description: string,
+    link: string
+}
+
 export {
     Link,
-    CardInfo
+    CardInfo,
+    CardType
 }
