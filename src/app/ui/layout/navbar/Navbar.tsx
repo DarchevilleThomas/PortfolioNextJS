@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div
-            className="fixed top-0 left-0 w-full flex flex-row bg-dark h-16 min-h-16 justify-between items-center gap-5 px-[9%] py-12 border-b border-black/20 z-10">
+            className="fixed top-0 left-0 w-full flex flex-row bg-dark h-16 min-h-16 justify-between items-center gap-5 px-[9%] py-12 border-b border-black/20 z-50">
 
             <ThomasLogo />
 
