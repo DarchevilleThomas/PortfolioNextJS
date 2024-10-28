@@ -57,7 +57,7 @@ const Presentation = () => {
 
                 {/* Photo de profil */}
                 <div>
-                    <img src="/images/photo.svg" alt="Photo Accueil" width={500} height={500}
+                    <img src="/images/photo.svg" alt="Photo Accueil" width={100} height={100}
                          className="w-40 md:w-60 lg:w-80 rounded-full object-cover" />
                 </div>
             </section>
