@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "@/app/ui/layout/navbar/Link";
 import { Link as LinkType } from "@/app/types/global";
 import ThomasLogo from "@/app/ui/layout/navbar/ThomasLogo";
+import Image from "next/image";
 
 const Navbar = () => {
 
@@ -30,8 +31,10 @@ const Navbar = () => {
             </div>
 
             {/* Icône de l'hamburger visible uniquement sur les petits écrans */}
-            <img
+            <Image
                 onClick={() => setOpen(!open)}
+                height={50}
+                width={50}
                 src="/icons/hamburger-menu.svg"
                 alt="hamburger-menu-icon"
                 className="lg:hidden absolute top-6 right-12 hover:cursor-pointer"
@@ -42,10 +45,12 @@ const Navbar = () => {
                 className={`fixed top-0 right-0 w-screen h-screen bg-dark-light/60 flex flex-col gap-8 justify-center items-center transform transition-transform duration-500 ease-in-out backdrop-blur-xl
                 ${open ? "translate-y-0" : "-translate-y-full"}`}
             >
-                <img
+                <Image
                     onClick={() => setOpen(!open)}
                     src="/icons/close-menu.svg"
                     alt="close-menu-icon"
+                    height={50}
+                    width={50}
                     className="absolute top-6 right-12 hover:cursor-pointer"
                 />
 
