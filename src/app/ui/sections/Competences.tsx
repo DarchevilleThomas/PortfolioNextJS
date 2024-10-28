@@ -16,7 +16,6 @@ const Competences = () => {
         { icon: "akar-icons:php-fill", title: "PHP" },
         { icon: "ri:java-fill", title: "Java" },
         { icon: "mdi:tailwind", title: "Tailwind CSS" },
-        { icon: "ic:baseline-plus", title: "..." }
     ];
 
     const otherCards: CardInfo[] = [
