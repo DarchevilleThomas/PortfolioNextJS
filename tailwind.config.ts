@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         'dark': '#1F242D',
         'dark-light': '#323946',
-        'primary': '#67BBF3',
+        'primary': '#439DEE',
       },
       fontFamily: {
         'sans': ['Poppins'],
