@@ -12,10 +12,10 @@ const Projets = () => {
             link: "https://github.com/DarchevilleThomas/RayTracer"
         },
         {
-            imageLink: "/images/juste_prix.svg",
-            title: "Juste Prix",
-            description: "Célébre épreuve du Juste Prix créée sur Eclipse à l'aide de JavaFX afin de réaliser son interface graphique.",
-            link: "https://github.com/DarchevilleThomas/JustePrix"
+            imageLink: "/images/totobot.svg",
+            title: "TotoBot",
+            description: "Site permettant de discuter avec des IA. (Utilisation de NextJS, shadcn/ui, etc.).",
+            link: "https://github.com/DarchevilleThomas/TotoBot"
         },
         {
             imageLink: "/images/tictactoe.svg",
