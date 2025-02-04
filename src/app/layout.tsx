@@ -1,9 +1,9 @@
-import type {Metadata} from "next";
-import "./globals.css";
 import Navbar from "@/app/ui/layout/navbar/Navbar";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Portfolio",
+    title: "Darcheville Thomas",
     description: "Portfolio of Darcheville Thomas",
 };
 
