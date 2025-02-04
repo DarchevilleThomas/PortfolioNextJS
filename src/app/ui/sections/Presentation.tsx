@@ -50,7 +50,7 @@ const Presentation = () => {
                     </div>
 
                     {/* Bouton de téléchargement du CV */}
-                    <a href="https://drive.google.com/file/d/1HyIHGxz-Gw0N87NgiILIrJ8hQI9PI1aN/view?usp=sharing"
+                    <a href="https://drive.google.com/file/d/1HyIHGxz-Gw0N87NgiILIrJ8hQI9PI1aN/view"
                        className="inline-block mt-6 px-8 py-4 bg-primary text-white lg:text-xl font-semibold rounded-full shadow-[0_0_1rem] shadow-primary hover:shadow-none transition lg:tracking-widest"
                        target="_blank">
                         Télécharger mon CV
